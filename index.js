@@ -1,12 +1,22 @@
 const inquirer = require("inquirer");
 const mysql = require('mysql2');
 
+const db = mysql.createConnection(
+    {
+      host: 'localhost',
+      user: 'root',
+      password: '',
+      database: 'employees_db'
+    },
+    console.log(`Connected to the employees_db database.`)
+  );
+
 const options = [
     {
     type: 'list',
     message: 'What would you like to do?',
     name: 'choice',
-    choices: ["View All Departments","View All Roles","View All Employees","Add a Deparment","Add a Role","Add an Employee","Update an Employee Role","Nothing"]
+    choices: ["View All Departments","View All Roles","View All Employees","Add a Department","Add a Role","Add an Employee","Update an Employee Role","Nothing"]
   },
 ]
 
@@ -85,19 +95,48 @@ function optionSelect() {
     inquirer.prompt(options)
     .then (function (data) {
         if(data.choice == "View All Departments") {
-            optionSelect();
+            db.query('SELECT * FROM department', function (err,results) {
+                console.log(results);
+                optionSelect();
+            });
         } else if (data.choice == "View All Roles") {
-            optionSelect();
+            db.query('SELECT * FROM role', function (err,results) {
+                console.log(results);
+                optionSelect();
+            });
         } else if (data.choise == "View All Employees") {
-            optionSelect();
+            db.query('SELECT * FROM employee', function (err,results) {
+                console.log(results);
+                optionSelect();
+            });
         } else if (data.choice == "Add a Department") {
-            optionSelect();
+            inquirer.prompt(addDepartment)
+            .then (function (data){
+
+                optionSelect();
+
+            })
         } else if (data.choice == "Add a Role") {
-            optionSelect();
+            inquirer.prompt(addRole)
+            .then (function (data){
+
+                optionSelect();
+
+            })
         } else if (data.choice == "Add an Employee") {
-            optionSelect();
+            inquirer.prompt(addEmployee)
+            .then (function (data){
+
+                optionSelect();
+
+            })
         } else if (data.choice == "Update an Employee Role") {
-            optionSelect();
+            inquirer.prompt(updateEmployee)
+            .then (function (data){
+
+                optionSelect();
+
+            })
         } else if (data.choice == "Nothing"){
             console.log("Have a nice day!")
         }

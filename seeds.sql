@@ -1,20 +1,20 @@
-INSERT INTO department (id,name)
-VALUES (1,"Accounting"),
-       (2,"Customer Support"),
-       (3,"Human Resources"),
-       (4,"Engineering"),
-       (5,"Operations"),
-       (6,"Payroll"),
-       (7,"Business Development");
+INSERT INTO department (name)
+VALUES ("Accounting"),
+       ("Customer Support"),
+       ("Human Resources"),
+       ("Engineering"),
+       ("Operations"),
+       ("Payroll"),
+       ("Business Development");
 
-INSERT INTO role (id,title,salary,department_id)
-VALUES (1,"Software Engineer",80000,4),
-       (2,"Payroll Manager",95000,6),
-       (3,"Human Resources Manager",100000,3),
-       (4,"Financial Analyst",750000,7),
-       (5,"Project Manager",80000,5),
-       (6,"Accountant",55000,1),
-       (7,"Customer Support Specialist",60000,2);
+INSERT INTO role (title,salary,department_id)
+VALUES ("Software Engineer",80000,4),
+       ("Payroll Manager",95000,6),
+       ("Human Resources Manager",100000,3),
+       ("Financial Analyst",750000,7),
+       ("Project Manager",80000,5),
+       ("Accountant",55000,1),
+       ("Customer Support Specialist",60000,2);
 
 INSERT INTO employee (id,first_name,last_name,role_id,manager_id)
 VALUES (2,"Jessica","Newman",3),

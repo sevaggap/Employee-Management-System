@@ -1,0 +1,24 @@
+{
+  "name": "uoft-scs-coding-bootcamp-homework-12-employee-management-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sevaggap/UofT-SCS-Coding-Bootcamp-Homework-12-Employee-Management-System.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sevaggap/UofT-SCS-Coding-Bootcamp-Homework-12-Employee-Management-System/issues"
+  },
+  "homepage": "https://github.com/sevaggap/UofT-SCS-Coding-Bootcamp-Homework-12-Employee-Management-System#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0",
+    "mysql2": "^2.3.3"
+  }
+}

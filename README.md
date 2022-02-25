@@ -49,4 +49,4 @@ limitations under the License.
  <a name="github"></a>
 ## GitHub
 Github: sevaggap <br>
-Deployed Application on Heroku: https://obscure-ravine-39503.herokuapp.com/
+Walkthrough Video: https://drive.google.com/file/d/16Z1aEwFRY_KSgYRmxj2AXLqkOHLoAhCX/view?usp=sharing

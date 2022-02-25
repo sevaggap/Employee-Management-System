@@ -15,7 +15,7 @@ Developers frequently have to create interfaces that allow non-developers to eas
 
 <a name="install"></a>
 ## Installation
-Clone the repository, and input your MySQL password in the indicated location in the index.js file. Run npm install to install the necessary Inquirer, console.table, and mysql2 packages. Once complete run the node index.js commands to start the application.s
+Clone the repository, and input your MySQL password in the indicated location in the index.js file. Run npm install to install the necessary Inquirer, console.table, and mysql2 packages. Once complete run the node index.js command to start the application
  
  <a name="usage"></a>
 ## Usage
